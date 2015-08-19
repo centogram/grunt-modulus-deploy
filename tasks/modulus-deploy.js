@@ -40,7 +40,7 @@ var captureOutput = function(child, output) {
 
 module.exports = function(grunt) {
 
-    grunt.registerMultiTask('modulus-deploy', 'Allows deployment to modulus.io from Grunt.', function() {
+    grunt.registerMultiTask('modulusDeploy', 'Allows deployment to modulus.io from Grunt.', function() {
         var options = this.options();
 
         var done = this.async();

@@ -24,14 +24,14 @@ This plugin requires you add environment variables to authenticate with modulus.
 ###MODULUS_TOKEN
  - The API Token that gives access to deploy to the specified project. Please see here for documentation on [how to create an API Token](https://modulus.io/codex/cli/using_api_tokens).
 
-## The "modulus-deploy" task
+## The "modulusDeploy" task
 
 ### Overview
-In your project's Gruntfile, add a section named `modulus-deploy` to the data object passed into `grunt.initConfig()`.
+In your project's Gruntfile, add a section named `modulusDeploy` to the data object passed into `grunt.initConfig()`.
 
 ```js
 grunt.initConfig({
-  modulus-deploy: {
+  modulusDeploy: {
     options: {
       // Task-specific options go here.
     },
@@ -56,7 +56,7 @@ In this example, a target `stage` is defined. When the task runs, it attempts to
 
 ```js
 grunt.initConfig({
-  modulus-deploy: {
+  modulusDeploy: {
     stage: {
       options: {
       	project: "my-site-stage"
