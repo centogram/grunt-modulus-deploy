@@ -44,8 +44,13 @@ module.exports = function(grunt) {
         var options = this.options();
 
         var done = this.async();
-
-        var deployCmd = modulusPath + ' deploy' + ' -p ' + options.project;
+        if ( options.path && options.path.length > 0 ) {
+            options.path = ' ' + options.path;
+        } else {
+            options.path = '';
+        }
+        
+        var deployCmd = modulusPath + ' deploy' + ' -p ' + options.project + options.path;
 
         runCmd(deployCmd, options.project+' running at', function(err){
             if(err){

@@ -49,6 +49,11 @@ Type: `String`
 
 The name of the modulus project to deploy.
 
+#### options.path
+Type: `String`
+
+The relative or absolute path of the folder to deploy.
+
 ### Usage Examples
 
 #### Default Options
